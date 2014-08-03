@@ -1,0 +1,7 @@
+{
+  "name": "webdriver-recipes",
+  "private": true,
+  "devDependencies": {
+    "selenium-webdriver": "~2.42.1"
+  }
+}
