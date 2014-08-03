@@ -65,8 +65,6 @@ function findLink() {
 			console.log(++counter + '. ' + text);
 			if (text === 'Philosophy') {
 				console.log('\nReached Philosophy in '+ counter +' hops.\n');
-				counter = 0;
-				browser.sleep(1000);
 				browser.quit();
 			} else {
 				link.click().then(clean).then(findLink);
