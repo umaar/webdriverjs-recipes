@@ -51,7 +51,7 @@ function clean(str) {
 	var promise = webdriver.promise.defer();
 
 	var para = browser.findElement(webdriver.By.css('#mw-content-text > p'));
-	para.getInnerHtml().then(function(html){
+	para.getAttribute("innerHTML").then(function(html){
 		html = strip(html);
 		var script = "document.querySelector('#mw-content-text > p').innerHTML = '" + html + "'";
 		browser.executeScript(script).then(promise.fulfill);
