@@ -23,7 +23,7 @@ function handleFailure(err) {
 }
 
 function findTutsPlusLink() {
-	return browser.findElements(webdriver.By.css('[href="http://code.tutsplus.com/"]')).then(function(result) {
+	return browser.findElements(webdriver.By.css('[href="https://code.tutsplus.com/"]')).then(function(result) {
 		return result[0];
 	});
 }
